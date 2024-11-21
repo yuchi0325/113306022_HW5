@@ -100,10 +100,23 @@ body {
     padding: 0;
 }
 
+.homework-list li {
+    display: grid;
+    grid-template-columns:  80px auto;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+}
+.homework-list span {
+    font-weight: bold;
+    color: gray;
+}
+
 .homework-list a {
     text-decoration: none;
     color: darkgreen;
-    text-align: right;
+    font-size: 0.9rem;
+    word-break: break-all;
 }
 
 .homework-list a:hover {
@@ -122,6 +135,8 @@ body {
 .favorite-music .music-item {
     display: flex;
     align-items: center;
+    text-align: center;
+    flex-direction: column;
     gap: 10px; 
 }
 
